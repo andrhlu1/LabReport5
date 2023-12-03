@@ -9,6 +9,7 @@ Content:
 Hi everyone,
 
 I've written a simple Java program (NumberSum.java) that reads numbers from a file (numbers.txt) and calculates their sum. 
+
 NumberSum.java:
 ```
 import java.io.*;
