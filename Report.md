@@ -9,7 +9,42 @@ Content:
 Hi everyone,
 
 I've written a simple Java program (NumberSum.java) that reads numbers from a file (numbers.txt) and calculates their sum. 
-However, when I run the program using my Bash script (run.sh), it's not showing the expected result. Instead, it just stops without any error message. 
+NumberSum.java:
+```
+import java.io.*;
+import java.util.*;
+
+public class NumberSum {
+    public static void main(String[] args) {
+        try {
+            File file = new File("numbers.txt");
+            Scanner scanner = new Scanner(file);
+
+            int sum = 0;
+            while (scanner.hasNextInt()) {
+                int number = scanner.nextInt();
+                sum += number;
+            }
+
+            System.out.println("Sum: " + sum);
+            scanner.close();
+        } catch (FileNotFoundException e) {
+            System.out.println("File not found.");
+        }
+    }
+}
+
+```
+numbers.txt:
+```
+10
+20
+30
+not_a_number
+40
+```
+
+However, when I run the program using my Bash script (run.sh), it's not showing the expected result. Instead, it just displays "60" (which is inccorect) without any error message. 
 Here's a screenshot of the terminal output after running the script:
 
 ![Image](lab5error.jpg)
