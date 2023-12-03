@@ -91,3 +91,8 @@ Edit numbers.txt to ensure it only contains integer values.
 
 Part 2:
 
+
+During the second half of the quarter, We explored the basics of Vim, a powerful text editor known for its efficiency. 
+Grasping its modal nature and keyboard-focused commands was initially challenging, but it quickly became a game-changer for my coding efficiency. 
+Vim's seamless navigation and editing capabilities, without the need for a mouse, significantly streamlined my workflow, 
+revealing the practical benefits of mastering a text-based interface.
